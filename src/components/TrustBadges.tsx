@@ -1,25 +1,25 @@
-import { Shield, Truck, RotateCcw, CreditCard } from 'lucide-react';
+import { ShieldCheck, Truck, RotateCcw, Wallet } from 'lucide-react';
 
 const BADGES = [
   {
     icon: Truck,
-    title: "Global Shipping",
-    desc: "Complimentary delivery on orders over $500"
-  },
-  {
-    icon: Shield,
-    title: "Secure Payment",
-    desc: "Fully encrypted transaction processing"
+    title: "Next-Day Shipping",
+    desc: "Order by 2 PM. Free delivery on orders over $50."
   },
   {
     icon: RotateCcw,
-    title: "Easy Returns",
-    desc: "30-day return policy for peace of mind"
+    title: "Zero-Risk Returns",
+    desc: "30-day money-back guarantee. No questions asked."
   },
   {
-    icon: CreditCard,
-    title: "Flexible Financing",
-    desc: "Available for select high-value pieces"
+    icon: Wallet,
+    title: "Cash on Delivery",
+    desc: "Pay safely when the product arrives at your door."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Secure Checkout",
+    desc: "100% secure payment with Visa, Mastercard, and more."
   }
 ];
 

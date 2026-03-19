@@ -47,20 +47,19 @@ export default function App() {
                 viewport={{ once: true }}
                 className="max-w-xl lg:pl-12"
               >
-                <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-muted mb-6 block">
-                  The Philosophy
+                <span className="text-[10px] font-mono tracking-[0.3em] uppercase text-accent font-bold mb-6 block">
+                  Exclusive App Offer
                 </span>
                 <h2 className="text-4xl md:text-6xl font-serif font-light leading-tight mb-8">
-                  Design that <br />
-                  <span className="italic">breathes</span> with you.
+                  Get 10% Off <br />
+                  <span className="italic">Your First Order</span>
                 </h2>
                 <p className="text-muted font-light leading-relaxed mb-10 text-lg">
-                  We believe that the objects we surround ourselves with define our state of mind. 
-                  Our pieces are designed to bring a sense of calm, clarity, and quiet luxury to your space.
+                  Join thousands of satisfied shoppers. Download the Lumina app today to unlock members-only pricing, track your fast deliveries in real-time, and seamlessly process any 30-day free returns.
                 </p>
-                <button className="group flex items-center gap-4 text-sm font-medium tracking-widest uppercase">
-                  Explore our process
-                  <div className="h-[1px] w-12 bg-accent group-hover:w-24 transition-all duration-500" />
+                <button type="button" aria-label="Download the App" className="group flex items-center gap-4 text-sm font-medium tracking-widest uppercase focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm px-2 cursor-pointer">
+                  Download For iOS & Android
+                  <div className="h-[1px] w-12 bg-accent group-hover:w-24 transition-all duration-500" aria-hidden="true" />
                 </button>
               </motion.div>
             </div>
@@ -74,9 +73,10 @@ export default function App() {
                 <div key={i} className="aspect-square overflow-hidden rounded-sm bg-secondary">
                   <img 
                     src={`https://picsum.photos/seed/luxe${i}/600/600`} 
-                    alt="Community" 
+                    alt={`Community lifestyle post ${i}`} 
                     className="h-full w-full object-cover hover:scale-110 transition-transform duration-700"
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                   />
                 </div>
               ))}
